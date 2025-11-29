@@ -17,15 +17,29 @@
         }
         a {
             color: #0066cc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
         }
         .section {
             margin-top: 40px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 12px;
+        }
+        .project-title {
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
 
     <h1>Fedor Prikolab</h1>
+
     <p>
         I am a junior data analyst at <strong>Nextologies Ltd</strong>,
         where I develop software applications for video analytics and automated
@@ -33,41 +47,87 @@
     </p>
     <p>
         I graduated from the <strong>University of Toronto</strong> with a
-        <strong>Specialist in Mathematics & Physics</strong> and a
+        <strong>Specialist in Mathematics &amp; Physics</strong> and a
         <strong>Major in Statistics</strong>.
         My interests lie in geometric group theory, Lie groups, representation
         theory, sub-Riemannian geometry, and mathematical methods in video
-        analytics and machine learning.
+        analytics and machine learning. I love mathematics and want to keep
+        posting my math projects here in the future.
     </p>
 
     <p><strong>Contact:</strong> <a href="mailto:fedorprikolab@gmail.com">fedorprikolab@gmail.com</a></p>
 
+    <!-- Recent projects -->
     <div class="section">
-        <h2>University Notes & Projects</h2>
+        <h2>Recent Projects</h2>
         <ul>
-            <li>Geodesics on the Heisenberg Group</li>
-            <li>Stalling’s Folding Algorithm</li>
-            <li>Introduction to Finite Representation Theory</li>
+            <li>
+                <span class="project-title">Face Search Engine for Live News Streams</span><br>
+                My most recent professional project is a web application that performs face search on
+                HLS news stream channels, combining real-time video analytics with large-scale face
+                embedding search. You can watch a short demo of the app here:
+                <a href="https://www.youtube.com/watch?v=lmkdCi6EGBY" target="_blank" rel="noopener noreferrer">
+                    YouTube demo video
+                </a>.
+            </li>
         </ul>
     </div>
 
+    <!-- University course projects and notes -->
     <div class="section">
-        <h2>Special Project</h2>
+        <h2>University of Toronto Course Projects and Reading Course Notes</h2>
         <ul>
-            <li>Face Search Engine for Live News Streams</li>
-        </ul>
-    </div>
+            <li>
+                <span class="project-title">
+                    From Vertex Models to Quantum Spin Chains:
+                    An Introductory Exposition of the Yang–Baxter Equation
+                </span><br>
+                Research course project for PHY479. This exposition develops the connection
+                between classical vertex models and quantum spin chains, introducing the
+                Yang–Baxter equation and transfer-matrix formalism in an accessible way.
+                [<a href="https://github.com/braveGauss/fedor-prikolab.github.io/blob/main/docs/yang_baxter_project.pdf"
+                    target="_blank" rel="noopener noreferrer">PDF</a>]
+            </li>
 
-    <div class="section">
-        <h2>Project PDFs</h2>
-        <p>
-            This section will include links to PDFs such as:
-        </p>
-        <ul>
-            <li><a href="/docs/stallings_algorithm.pdf">Stalling’s Folding Algorithm (PDF)</a></li>
-            <li><em>More coming soon…</em></li>
+            <li>
+                <span class="project-title">Reading Course Notes on Complex Semisimple Lie Algebras</span><br>
+                Notes for the reading course MAT492Y1 at the University of Toronto Mississauga,
+                focusing on highest weight theory, Verma modules, and the classification of
+                complex semisimple Lie algebras in the spirit of Serre, Fulton–Harris, and Hall.
+                [<a href="https://github.com/braveGauss/fedor-prikolab.github.io/blob/main/docs/representation_theory.pdf"
+                    target="_blank" rel="noopener noreferrer">PDF</a>]
+            </li>
+
+            <li>
+                <span class="project-title">
+                    From Queen Dido to the Heisenberg Group: Control-Theoretic Perspective
+                </span><br>
+                Course project for MAT482H (Topics in Mathematics – Control Theory). This work
+                connects the classical Queen Dido isoperimetric problem to geodesics on the
+                Heisenberg group, highlighting a control-theoretic viewpoint on sub-Riemannian
+                geometry.
+                [<a href="https://github.com/braveGauss/fedor-prikolab.github.io/blob/main/docs/Heisenberg_vs_Dido.pdf"
+                    target="_blank" rel="noopener noreferrer">PDF</a>]
+            </li>
+
+            <li>
+                <span class="project-title">
+                    Topological Model for Free Groups and Stallings&apos; Folding
+                </span><br>
+                Course project for MAT382H (Topics in Mathematics – Geometric Group Theory),
+                presenting a topological model for finitely generated subgroups of free groups
+                via Stallings&apos; folding algorithm.
+                [<a href="https://github.com/braveGauss/fedor-prikolab.github.io/blob/main/docs/stalling_algorithm.pdf"
+                    target="_blank" rel="noopener noreferrer">PDF</a>]
+                As part of this project, I also created an interactive web app for testing
+                Stallings&apos; folding on free groups of rank 2 and 3, available at
+                <a href="https://fedorstallings.com" target="_blank" rel="noopener noreferrer">
+                    fedorstallings.com
+                </a>.
+            </li>
         </ul>
     </div>
 
 </body>
 </html>
+
